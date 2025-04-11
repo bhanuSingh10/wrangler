@@ -154,6 +154,10 @@
         <groupId>com.google.protobuf</groupId>
         <artifactId>protobuf-java</artifactId>
         <version>${protobuf.version}</version>
+        <!-- Add your dependencies here -->
+
+ 
+
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -526,6 +530,7 @@
             </executions>
           </plugin>
         </plugins>
+        
       </build>
       <dependencyManagement>
         <dependencies>
