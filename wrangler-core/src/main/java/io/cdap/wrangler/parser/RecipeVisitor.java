@@ -218,6 +218,19 @@ public final class RecipeVisitor extends DirectivesBaseVisitor<RecipeSymbol.Buil
     return builder;
   }
 
+  @Override
+public RecipeSymbol.Builder visitByteSize(DirectivesParser.ByteSizeContext ctx) {
+  builder.addToken(new ByteSize(ctx.BYTE_SIZE().getText()));
+  return builder;
+}
+
+@Override
+public RecipeSymbol.Builder visitTimeDuration(DirectivesParser.TimeDurationContext ctx) {
+  builder.addToken(new TimeDuration(ctx.TIME_DURATION().getText()));
+  return builder;
+}
+
+
   /**
    * A Directive can consist of Bool field. The Bool field is represented as
    * either true or false. This visitor method extract the bool value into a
