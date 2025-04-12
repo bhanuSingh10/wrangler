@@ -1,0 +1,16 @@
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Wrangler 4.12.0-SNAPSHOT:
+[INFO]
+[INFO] Wrangler ........................................... SUCCESS [  1.761 s]
+[INFO] Wrangler API ....................................... SUCCESS [  4.138 s]
+[INFO] Wrangler REST Protocol Classes ..................... SUCCESS [  2.039 s]
+[INFO] Wrangler Core ...................................... SUCCESS [ 26.482 s]
+[INFO] Wrangler Storage ................................... SUCCESS [  3.472 s]
+[INFO] Wrangler Service ................................... SUCCESS [ 27.569 s]
+[INFO] Wrangler Testing Framework ......................... SUCCESS [  0.414 s]
+[INFO] Wrangler Transform ................................. SUCCESS [ 13.591 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:20 min
+[INFO] Finished at: 2025-04-12T11:02:50+05:30

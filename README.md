@@ -216,3 +216,65 @@ Cask is a trademark of Cask Data, Inc. All rights reserved.
 
 Apache, Apache HBase, and HBase are trademarks of The Apache Software Foundation. Used with
 permission. No endorsement by The Apache Software Foundation is implied by the use of these marks.
+
+
+
+
+## 🚀 New Features: ByteSize & TimeDuration Parsers with `aggregate-stats` Directive
+
+### 📦 ByteSize Parser
+
+Supports parsing size values like:
+- `"10KB"`, `"1.5MB"`, `"2GB"`
+
+Used for representing **data sizes** in a canonical form (bytes).  
+Example token input:  
+```text
+data_transfer_size: "512KB"
+```
+
+### ⏱️ TimeDuration Parser
+
+Supports parsing time values like:
+- `"500ms"`, `"1.2s"`, `"3m"`
+
+Used for representing **durations** in a canonical form (milliseconds).  
+Example token input:  
+```text
+response_time: "300ms"
+```
+
+---
+
+### 🧮 `aggregate-stats` Directive
+
+This new directive computes the **total** size and time across all input rows.
+
+#### ✅ Syntax
+```
+aggregate-stats :<size-column> :<time-column> <output-size-column> <output-time-column>
+```
+
+#### 🔍 Example
+Given input rows:
+| data_transfer_size | response_time |
+|--------------------|---------------|
+| "10KB"             | "150ms"       |
+| "20KB"             | "200ms"       |
+
+And recipe:
+```
+aggregate-stats :data_transfer_size :response_time total_size_mb total_time_sec
+```
+
+Will output:
+| total_size_mb | total_time_sec |
+|---------------|----------------|
+| 0.029         | 0.35           |
+
+
+## ✅ Evidence of Success
+
+- Build completed successfully with `mvn clean install -DskipTests=false`
+- All unit tests passed
+- Sample output:

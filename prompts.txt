@@ -1,0 +1,36 @@
+
+/*
+ * Copyright © 2025 Cask Data, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+ 
+AI tool used : GPT-4o
+Ex:
+Q: How to add BYTE_SIZE token in ANTLR grammar?
+Q: How to implement a custom Token class in CDAP Wrangler?
+Q: How to write a directive that works as an aggregate?
+Q: How to mock Arguments and ExecutorContext in a Wrangler test?
+Q: How to write a unit test for a directive in Wrangler?
+
+Prompt: How to define a new token type BYTE_SIZE in ANTLR grammar for CDAP Wrangler?
+Prompt: Help me write a Java class that parses strings like "10KB", "5MB" into canonical byte values.
+Prompt: How to integrate custom token classes into Wrangler’s UsageDefinition system?
+Prompt: What changes are needed in Directives.g4 to support new token types BYTE_SIZE and TIME_DURATION?
+Prompt: Guide me on creating a new directive in Wrangler that aggregates byte size and duration columns.
+Prompt: Write a test class for a Wrangler directive that sums ByteSize and TimeDuration inputs into MB and seconds.
+Prompt: Show how to simulate ExecutorContext and Arguments in unit tests.
+Prompt: What is the correct folder structure and package declaration for Wrangler core directive tests?
+Prompt: How do I fix Maven checkstyle and build errors while working on a custom Wrangler directive?
+Prompt: How to update README.md to document usage of new BYTE_SIZE and TIME_DURATION types in Wrangler?
+
