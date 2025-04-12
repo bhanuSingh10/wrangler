@@ -12,6 +12,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ * * Token representing time duration values like 150ms or 2.5s.
  */
 package io.cdap.wrangler.api.parser;
 
